@@ -1,101 +1,108 @@
 import { 
-    SET_USER_PURCHASES
+    SET_USER_PURCHASES,
+    SET_PURCHASE_DETAIL
 } from './types';
 
+export function setPurchaseDetail(_id) {
+    return ({
+        type: SET_PURCHASE_DETAIL,
+        payload: _id
+    })
+}
+
 export function fetchUserPurchases() {
-    return({
+    return ({
         type: SET_USER_PURCHASES,
         payload: [
             {
                 _id: 0,
-                total: 4.90,
-                orderNumber: 'AE309AGNO',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'Phil Greenwood',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 1,
-                total: 6.39,
-                orderNumber: 'AE309AGNO',
+                total: 1.30,
+                orderNumber: '24343sdfkjh72',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'Angela Ludlow',
-                    shippingAddress: '1234 West State Street'
+                    name: 'Maxwell Nelson',
+                    shippingAddress: '1337 West State Street'
                 }
             },
             {
                 _id: 2,
-                total: 99.80,
-                orderNumber: 'AE309AGNO',
+                total: 1.30,
+                orderNumber: 'B0048248343',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'Crumbles Swallow',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 3,
-                total: 4.90,
-                orderNumber: 'AE309AGNO',
+                total: 16.40,
+                orderNumber: 'ADFasdlfkjwe',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'armstead down',
+                    name: 'Max Asher Nelson',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 4,
-                total: 4.90,
-                orderNumber: 'AE309AGNO',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'chloe smalls',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 5,
-                total: 4.90,
-                orderNumber: 'AE309AGNO',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'Franz Nesnahoj',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 6,
-                total: 4.90,
-                orderNumber: 'AE309AGNO',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'Clayton Menace',
+                    name: 'Jordan Hudgens',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 7,
-                total: 4.90,
-                orderNumber: 'AE309AGNO',
+                total: 3.20,
+                orderNumber: '5UFISHDFJASUSHI298',
                 orderDate: new Date(),
-                creditCard: '0000',
+                creditCard: '-0000',
                 user: {
-                    name: 'Penelope Jarvis',
-                    shippingAddress: '1234 West State Street'
+                    name: 'Andrew Wold',
+                    shippingAddress: '348 Yo State Street'
                 }
             },
-            
-
+          
         ]
     })
 }
