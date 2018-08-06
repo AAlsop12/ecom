@@ -13,15 +13,15 @@ class SignUpForm extends Component {
         const info = [
             {
                 _id: 0,
-                title: 'At least 6 characters',
+                title: 'At least 6 characters'
             },
             {
                 _id: 1,
-                title: 'At least one number',
+                title: 'At least one number'
             },
             {
                 _id: 2,
-                title: 'At least one symbol',
+                title: 'At least one symbol'
             }
         ]
         return (
@@ -51,10 +51,6 @@ class SignUpForm extends Component {
                 name='confirm'
                 component={FormInput}/>
 
-
-
-
-
                 <div className='sign-up-form__line'></div>
                 <Field className='sign-up-form__login'
                 onClick={() => history.push('/account')}
@@ -63,16 +59,13 @@ class SignUpForm extends Component {
                 name='login'
                 component={FormButton}/>
                 <Field className='sign-up-form__back'
-                onClick={() => history.push('./signin')}
+                onClick={() => history.push('/signin')}
                 type='button'
                 title='Back'
                 name='back'
                 short={true}
                 component={FormButton}/>
-                <Details 
-                className = 'sign-up-form__details' 
-                title='Password Requirements'
-                info={info} />
+                <Details className='sign-up-form__details' title='Password Requirements' info={info}/>
             </form>
         )
     }
