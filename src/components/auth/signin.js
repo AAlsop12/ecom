@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 import SignInForm from './signinForm';
@@ -15,17 +14,20 @@ class SignIn extends Component {
     }
 
     onSubmit = (fields) => {
-        console.log(fields);
+        this.props.signIn(fields);
+        this.props.history.push('/account');
     }
 
     render() {
         return (
             <div className='sign-in'>
-                <PageTitle className='sign-in__page-title' title='Login'/>
+                <PageTitle className='sign-in__page-title' title='Login' />
                 <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
             </div>
         )
     }
 }
+
 SignIn = connect(null, actions)(SignIn);
+
 export default SignIn;
